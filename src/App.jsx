@@ -5,6 +5,7 @@ import { MobileMenu } from './components/MobileMenu';
 import './App.css'
 import "./index.css"
 import { Home } from './components/sections/Home';
+import { About } from './components/sections/About';
 
 function App() {
  //For showing if we are still loading or not
@@ -24,6 +25,7 @@ function App() {
         <Navbar menuOpen = {menuOpen} setMenuOpen ={setMenuOpen}/>
         <MobileMenu menuOpen = {menuOpen} setMenuOpen ={setMenuOpen}/>
         <Home/>
+        <About/>
 
       </div>
     </div>

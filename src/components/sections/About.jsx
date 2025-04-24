@@ -1,0 +1,93 @@
+import { School } from "lucide-react";
+
+export const About = () => {
+const WebdevSkills = [
+"HTML",
+"CSS",
+"React.js",
+"Node.js",
+"Tailwind",
+"SQL",
+"MonoDB",
+"JAVA",
+"JS",
+"Express",
+"Axios",
+];
+const DevOpsSkills = ["React", "Node.js", "Tailwind", "HTML"];
+
+return (
+<section
+id="about"
+className="min-h-screen flex items-center justify-center py-20 text-center"
+>
+{/* outer div */}
+<div className="max-w-3xl mx-auto px-4 ">
+<h2
+className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500
+to-cyan-400 bg-clip-text text-transparent"
+>
+About Me
+</h2>
+
+{/* small para and skills */}
+<div className="rounded-xl p-8 border-white/10 border hover:-translate-y-0.5 transition-all flex justify-center flex-col items-center">
+<p className="text-gray-300 mb-6 ">
+I'm an aspiring Software Engineer who loves learning new things and
+solving problems with technology. I'm always curious and motivated
+to grow both personally and professionally. I enjoy working with
+others to build useful and creative solutions. I'm always eager to
+contribute, adapt, and grow in different and fast-changing
+environments.
+</p>
+
+<div className=" gap-6 mt-8">
+<div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+<h3 className="text-xl font-bold mb-4 flex justify-center gap-2">
+<School />
+Education
+</h3>
+
+</div>
+</div>
+
+{/* skills */}
+{/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+<h3 className="text-xl font-bold mb-4">Development</h3>
+<div className="flex flex-wrap gap-2">
+{WebdevSkills.map((tech,id) => (
+<span key={id} className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">{tech}</span>
+))}
+</div>
+</div>
+<div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+<h3 className="text-xl font-bold mb-4">Development</h3>
+<div className="flex flex-wrap gap-2">
+{WebdevSkills.map((tech,id) => (
+<span key={id} className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">{tech}</span>
+))}
+</div>
+</div>
+</div> */}
+</div>
+
+{/* Education */}
+{/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+<div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+<h3 className="text-xl font-bold mb-4 flex justify-center gap-2">
+<School />
+Education
+</h3>
+<ul>
+<li>
+<strong>B.Tech in Computer Science</strong> -DITU [2022-2026]
+</li>
+</ul>
+</div>
+</div> */}
+
+</div>
+</section>
+);
+};

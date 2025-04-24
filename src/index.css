@@ -34,6 +34,23 @@ html, body{
   .animate-blink{
     animation: blink 0.8s step-end infinite ;
   }
+  /* for Image movement */
+@layer utilities {
+  @keyframes floating {
+  0% {
+  transform: translateY(0px);
+  }
+  50% {
+  transform: translateY(5px);
+  }
+  100% {
+  transform: translateY(0px);
+  }
+  }
+  .animate-floating {
+  animation: floating 3s ease-in-out infinite;
+  }
+  }
 }
 
 html{
