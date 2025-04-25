@@ -1,0 +1,20 @@
+
+[
+  
+  {
+    "title": "Technologies",
+    "subtitle": "Frameworks",
+    "icon": "Cpu",
+    "skills": [
+      { "name": "Linux", "value": 80},
+      { "name": "ReactJS", "value": 68},
+      { "name": "NodeJS", "value": 72},
+      { "name": "SQL", "value": 79},
+      { "name": "Elastic Compute Cloud", "value": 90},
+      { "name": "Simple Storage Service", "value": 90}
+    ]
+
+
+  }
+
+]

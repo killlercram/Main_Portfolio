@@ -28,7 +28,7 @@ to-cyan-400 bg-clip-text text-transparent"
           </p>
 
           <div className=" gap-6 mt-8">
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+            <div className="p-6 rounded-xl border-white/10  hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4 flex justify-center gap-2 ">
                 <School />
                 Education
@@ -37,7 +37,7 @@ to-cyan-400 bg-clip-text text-transparent"
             </div>
           </div>
 
-          {/* skills */}
+         {/* skills */}
           {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
 <h3 className="text-xl font-bold mb-4">Development</h3>
