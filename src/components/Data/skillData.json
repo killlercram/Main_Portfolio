@@ -13,8 +13,38 @@
       { "name": "Elastic Compute Cloud", "value": 90},
       { "name": "Simple Storage Service", "value": 90}
     ]
-
-
+  },
+  {
+    "title": "Languages",
+    "subtitle": "Tools for Problem Solving",
+    "icon": "Braces",
+    "skills": [
+      { "name": "Java", "value": 80},
+      { "name": "HTML/CSS", "value": 90},
+      { "name": "JavaScript", "value": 80}
+    ]
+  },
+  {
+    "title": "Developer Tools",
+    "subtitle": "Boosting Developer Productivity",
+    "icon": "Settings",
+    "skills": [
+      { "name": "VS Code", "value": 90},
+      { "name": "Git", "value": 90},
+      { "name": "Github", "value": 85},
+      { "name": "MongoDB", "value": 77},
+      { "name": "FireBase", "value": 68}
+    ]
+  },
+  {
+    "title": "Relevant CourseWork",
+    "subtitle": "Course Highlights",
+    "icon": "BookOpenCheck",
+    "skills": [
+      { "name": "Data Structures and Alogrithms", "value": 77},
+      { "name": "Object Oriented Programming", "value": 90},
+      { "name": "Baise of Networking", "value": 80}
+    ]
   }
 
 ]

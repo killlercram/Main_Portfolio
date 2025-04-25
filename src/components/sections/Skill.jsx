@@ -117,7 +117,7 @@ to-cyan-400 bg-clip-text text-transparent text-center"
                 key={index}
                 className="collapse collapse-arrow join-item border-base-300 border"
               >
-                <input type="checkbox" name="my-accordion-4" defaultChecked />
+                <input type="radio" name="my-accordion-07" defaultChecked/>
                 <div className="collapse-title flex items-center gap-4">
                   <Icon className="size-9 text-blue-400" />
                   {/* Title and sub */}

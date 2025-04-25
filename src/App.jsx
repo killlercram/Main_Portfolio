@@ -7,6 +7,9 @@ import "./index.css"
 import { Home } from './components/sections/Home';
 import { About } from './components/sections/About';
 import { Skill } from './components/sections/Skill';
+import { Project } from './components/sections/Project';
+import { Contact } from './components/sections/Contact';
+
 
 function App() {
  //For showing if we are still loading or not
@@ -28,6 +31,8 @@ function App() {
         <Home/>
         <About/>
         <Skill/>
+        <Project/>
+        <Contact/>
 
       </div>
     </div>
