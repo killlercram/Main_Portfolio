@@ -91,7 +91,7 @@ to-cyan-400 bg-clip-text text-transparent"
 
       {/* Footer */}
       <div className=''>
-        
+        <div></div>
 
       </div>
 
