@@ -1,3 +1,8 @@
+# Environment Variable
+- VITE_SERVICE_ID = 
+- VITE_TEMPLATE_ID = 
+- VITE_PUBLIC_KEY = 
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
