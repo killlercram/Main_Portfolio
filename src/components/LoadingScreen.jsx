@@ -2,28 +2,27 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 export const LoadingScreen = ({ onComplete }) => {
-//Will keep track of the length of the text
-const [text, setText] = useState("");
-const fullText = "< Hello World />";
+  //Will keep track of the length of the text
+  const [text, setText] = useState("");
+  const fullText = "< Hello World />";
 
-//This will display each letter with delay
-useEffect(() => {
-  let index =0;
-  const interval = setInterval (() => {
-    setText(fullText.substring(0,index));
-    index++;
+  //This will display each letter with delay
+  useEffect(() => {
+    let index = 0;
+    const interval = setInterval(() => {
+      setText(fullText.substring(0, index));
+      index++;
 
-    if(index > fullText.length){
-      clearInterval(interval);
-      setTimeout (() => {
-        onComplete();
-      },1000);
-    }
+      if (index > fullText.length) {
+        clearInterval(interval);
+        setTimeout(() => {
+          onComplete();
+        }, 1000);
+      }
+    }, 100);
+    return () => clearInterval(interval);
+  }, [onComplete]);
 
-  }, 100);
-  return () => clearInterval(interval);
-},[onComplete]);
- 
   return (
     //  blinking Text
     <div className="fixed inset-0 z-50 bg-black text-gray-100 flex flex-col items-center justify-center">
