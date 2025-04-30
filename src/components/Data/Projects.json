@@ -5,18 +5,14 @@
     "Tech": ["React.js", "Node.js", "Socket.io", "Redux"]
   },
   {
-    "Pname": "Chat App",
+    "Pname": "Note Vault",
     "PDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
-    "Tech": ["React.js", "Node.js", "Socket.io", "Redux"]
+    "Tech": ["Typescript", "Axios", "S3", "CloudFront"]
   },
   {
-    "Pname": "Chat App",
+    "Pname": "Tic Tac Toe",
     "PDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
-    "Tech": ["React.js", "Node.js", "Socket.io", "Redux"]
-  },
-  {
-    "Pname": "Chat App",
-    "PDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
-    "Tech": ["React.js", "Node.js", "Socket.io", "Redux"]
+    "Tech": ["HTML", "CSS", "Javascript"]
   }
+  
 ]

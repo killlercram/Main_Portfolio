@@ -117,7 +117,7 @@ to-cyan-400 bg-clip-text text-transparent"
 
         {/* Copyright */}
         <p className="text-center md:mb-5">
-          &copy; Shashwat Tandon.All rights reserved.
+          &copy;Shashwat Tandon.All rights reserved.
         </p>
       </div>
     </section>
