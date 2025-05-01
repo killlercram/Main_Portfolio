@@ -6,7 +6,7 @@
   },
   {
     "Pname": "Note Vault",
-    "PDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
+    "PDescription": "ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
     "Tech": ["Typescript", "Axios", "S3", "CloudFront"]
   },
   {
