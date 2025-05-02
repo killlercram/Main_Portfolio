@@ -1,17 +1,17 @@
 [
   {
     "Pname": "Chat App",
-    "PDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
+    "PDescription": "A real-time chat application built using the MERN stack and Socket.IO, enabling seamless one-on-one messaging with user authentication, live message updates, and a responsive UI. Showcases full-stack development and real-time communication skills. ",
     "Tech": ["React.js", "Node.js", "Socket.io", "Redux"]
   },
   {
     "Pname": "Note Vault",
-    "PDescription": "ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
+    "PDescription": "A frontend-only note-taking app built with React, TanStack, and Zustand. Deployed as a static site on AWS S3 and served globally via CloudFront, highlighting cloud deployment, scalability, and performance optimization.",
     "Tech": ["Typescript", "Axios", "S3", "CloudFront"]
   },
   {
     "Pname": "Tic Tac Toe",
-    "PDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
+    "PDescription": "A classic Tic Tac Toe game built using HTML, CSS, and vanilla JavaScript with interactive gameplay and a responsive layout. Hosted on Render as a static web service, showcasing cloud deployment and frontend fundamentals.",
     "Tech": ["HTML", "CSS", "Javascript"]
   }
   
