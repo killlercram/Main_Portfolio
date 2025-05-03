@@ -12,12 +12,6 @@ on:
         required: true
         default: "latest"
 
-#Adding Secrets from Github actions
-# env:
-#   VITE_SERVICE_ID: '${{secrets.VITE_SERVICE_ID}}'
-#   VITE_TEMPLATE_ID: '${{secrets.VITE_TEMPLATE_ID}}'
-#   VITE_PUBLIC_KEY: '${{secrets.VITE_PUBLIC_KEY}}'
-
 jobs:
   docker_build:
     runs-on: ubuntu-latest
