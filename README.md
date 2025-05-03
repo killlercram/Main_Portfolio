@@ -1,7 +1,6 @@
-# Environment Variable
-- VITE_SERVICE_ID = 
-- VITE_TEMPLATE_ID = 
-- VITE_PUBLIC_KEY = 
+# Portfolio
+
+This is my portfolio created in React with love.
 
 ## Things Done 
 Going step by step:
@@ -21,4 +20,27 @@ Going step by step:
 
 
 ### GitHub Action
+
+**1.> Created the Validate workflow**
+- It will be triggered when code will be pushed or pulled.
+- This will first check if the code is lint free.
+- Next it will only build after lint test will be successfull.
+
+**2.> Create Dockerization workflow**
+- It is manual triggering workflow
+- Can dynamically add the tagname to the image
+- Login to Docker hub
+- Here four tasks are being done
+- Pulling the existing image if any
+- Deleting the existing Image
+- Building the new Docker image from docker file
+- Pushing the image to the docker hub
+
+
+
+## Environment Variable
+- VITE_SERVICE_ID = 
+- VITE_TEMPLATE_ID = 
+- VITE_PUBLIC_KEY = 
+
 

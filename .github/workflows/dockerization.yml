@@ -1,0 +1,62 @@
+#This will delete previous if any or build image and push the image in the docker hub.
+
+name: Docker Actions
+
+#this will be triggered after the validation workflow will be completed
+on:
+  # This allows Manual trigger of this workflow and dynamic tagname for the image
+  workflow_dispatch: 
+    inputs:
+      docker_tag:
+        description: "Docker Image Tag"
+        required: true
+        default: "latest"
+jobs:
+  docker_build:
+    runs-on: ubuntu-latest
+    # needs: lint #It will work only after lint check is successfull
+
+    steps:
+      #Checking the code 
+      - name: Checkout Code
+        uses: Actions/checkout@v4
+
+      #Logging to Docker hub
+      - name: Login to DockerHub
+        uses: docker/login-action@v3
+        with:
+          username: ${{secrets.DOCKER_HUB_USERNAME}}
+          password: ${{secrets.DOCKER_HUB_PSWD}}
+
+      #step 1:Pulling the existing Image(if any)
+      - name: Pulling existing Docker Image
+        run: | 
+           docker pull ${{secrets.DOCKER_HUB_USERNAME}}/portfolio:${{ github.event.inputs.docker_tag }} || echo "No previous image found"
+
+      #step 2: Removing old image
+      - name: Removing old Image
+        run: |
+           docker rmi ${{secrets.DOCKER_HUB_USERNAME}}/portfolio:${{ github.event.inputs.docker_tag }} || echo "No image to remove"
+      
+      
+      #step 3: Building new Docker image from docker file
+      - name: Building Docker image
+        run: docker build -t ${{secrets.DOCKER_HUB_USERNAME}}/portfolio:${{ github.event.inputs.docker_tag }} .
+      
+      
+      #step 2: Pushing Image to docker hub
+      - name: Push Docker Image
+        run: docker push ${{secrets.DOCKER_HUB_USERNAME}}/portfolio:${{ github.event.inputs.docker_tag }}
+        
+
+          
+        
+
+      
+
+
+
+
+
+  
+
