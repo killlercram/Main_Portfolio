@@ -1,0 +1,70 @@
+# This will be triggered when push or pull will be done in the main branch
+
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+
+name: Validation
+
+on:
+  push: 
+    branches: ["main"]
+  pull_request: 
+    branches: ["main"]
+
+jobs:
+  #this will check if there is any lint errors
+  lint:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x, 22.x]
+    
+    steps:
+      # Checking if the code in repo if it is feasible
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      # Setting node version
+      - name: Use Node.js ${{matrix.node-version}}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{matrix.node-version}}
+          cache: 'npm' #Selecting package manager
+      
+      # installing all the packages and dependencies to run the app
+      - name: Installing dependencies
+        run: npm ci
+      
+      # Building the environment
+      - name: Checking Error
+        run: npm run lint
+  
+  
+        #this will check if the build is successful
+  build:
+    runs-on: ubuntu-latest
+    needs: lint # build will run only after lint is successful
+
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x, 22.x]
+    
+    steps:
+      # Checking if the code in repo if it is feasible
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      # Setting node version
+      - name: Use Node.js ${{matrix.node-version}}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{matrix.node-version}}
+          cache: 'npm' #Selecting package manager
+      
+      # installing all the packages and dependencies to run the app
+      - name: "Installing dependencies"
+        run: npm ci
+      
+      # Building the environment
+      - name: "Build"
+        run: npm run build
