@@ -3,15 +3,22 @@
 - VITE_TEMPLATE_ID = 
 - VITE_PUBLIC_KEY = 
 
-# React + Vite
+## Things Done 
+Going step by step:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Application
+- Created a fully responsible Portfolio.
+- This is a single page application.
+- It is created in React.js.
 
-Currently, two official plugins are available:
+### Containerizing
+- Simply creating a Docker file.
+- It is multistagged to save the space.no
+- Creating the container for this application.
+- Giving it the optional port of 10000
+- Building Image: docker build -t name:tagname .
+- Running container: docker run -p hostport:containerport imagename
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+### GitHub Action
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

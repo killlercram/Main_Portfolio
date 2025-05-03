@@ -12,21 +12,26 @@ export const Footer = () => {
       </div>
       {/* Logos */}
       <ul className="flex md:flex-col items-start gap-3 my-3">
-        <li className="flex items-center gap-4 justify-center">
-          <a className="text-xl" href="mailto:shashwatandon@gmail.com">
+        <li>
+          <a
+          target="_blank"
+          href="mailto:shashwatandon@gmail.com">
             <img src="/assets/contact/emailIcon.png" alt="Email Icon" />
           </a>
         </li>
-        <li className="">
+        <li >
           <a
-            className="text-xl"
+            
+            target="_blank"
             href="https://www.linkedin.com/in/shashwat-tandon-b7281021a/"
           >
             <img src="/assets/contact/linkedinIcon.png" alt="LinkedIn Icon" />
           </a>
         </li>
-        <li className="">
-          <a className="text-xl" href="https://github.com/killlercram">
+        <li >
+          <a 
+          target="_blank"
+           href="https://github.com/killlercram">
             <img src="/assets/contact/githubIcon.png" alt="Github Icon" />
           </a>
         </li>
