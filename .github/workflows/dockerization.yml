@@ -13,10 +13,10 @@ on:
         default: "latest"
 
 #Adding Secrets from Github actions
-env:
-  VITE_SERVICE_ID: '${{secrets.VITE_SERVICE_ID}}'
-  VITE_TEMPLATE_ID: '${{secrets.VITE_TEMPLATE_ID}}'
-  VITE_PUBLIC_KEY: '${{secrets.VITE_PUBLIC_KEY}}'
+# env:
+#   VITE_SERVICE_ID: '${{secrets.VITE_SERVICE_ID}}'
+#   VITE_TEMPLATE_ID: '${{secrets.VITE_TEMPLATE_ID}}'
+#   VITE_PUBLIC_KEY: '${{secrets.VITE_PUBLIC_KEY}}'
 
 jobs:
   docker_build:
@@ -47,9 +47,9 @@ jobs:
       - name: Building Docker image
         run: |
           docker build \
-           --build-arg VITE_SERVICE_ID=$VITE_SERVICE_ID \
-           --build-arg VITE_TEMPLATE_ID=$VITE_TEMPLATE_ID \
-           --build-arg VITE_PUBLIC_KEY=$VITE_PUBLIC_KEY \
+           --build-arg VITE_SERVICE_ID=${{secrets.VITE_SERVICE_ID}} \
+           --build-arg VITE_TEMPLATE_ID=${{secrets.VITE_TEMPLATE_ID}} \
+           --build-arg VITE_PUBLIC_KEY=${{secrets.VITE_PUBLIC_KEY}} \
            -t ${{secrets.DOCKER_HUB_USERNAME}}/portfolio:${{github.event.inputs.docker_tag}} .
 
       #step 2: Pushing Image to docker hub
