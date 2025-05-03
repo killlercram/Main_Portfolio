@@ -25,6 +25,11 @@ RUN npm install -g serve
 WORKDIR /app
 COPY --from=builder /app/dist .
 
+# Accept build arguments (no need for ENV here if you're only using these at build time)
+ARG VITE_SERVICE_ID
+ARG VITE_TEMPLATE_ID
+ARG VITE_PUBLIC_KEY
+
 #Exposing the app's port manually
 EXPOSE 10000
 

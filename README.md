@@ -14,6 +14,7 @@ Going step by step:
 - Simply creating a Docker file.
 - It is multistagged to save the space.no
 - Creating the container for this application.
+- Added all the environment variable
 - Giving it the optional port of 10000
 - Building Image: docker build -t name:tagname .
 - Running container: docker run -p hostport:containerport imagename
@@ -33,7 +34,7 @@ Going step by step:
 - Here four tasks are being done
 - Pulling the existing image if any
 - Deleting the existing Image
-- Building the new Docker image from docker file
+- Building the new Docker image from docker file and passing the Environment variables
 - Pushing the image to the docker hub
 
 

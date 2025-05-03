@@ -5,7 +5,7 @@ name: Docker Actions
 #this will be triggered after the validation workflow will be completed
 on:
   # This allows Manual trigger of this workflow and dynamic tagname for the image
-  workflow_dispatch: 
+  workflow_dispatch:
     inputs:
       docker_tag:
         description: "Docker Image Tag"
@@ -17,7 +17,7 @@ jobs:
     # needs: lint #It will work only after lint check is successfull
 
     steps:
-      #Checking the code 
+      #Checking the code
       - name: Checkout Code
         uses: Actions/checkout@v4
 
@@ -30,33 +30,22 @@ jobs:
 
       #step 1:Pulling the existing Image(if any)
       - name: Pulling existing Docker Image
-        run: | 
-           docker pull ${{secrets.DOCKER_HUB_USERNAME}}/portfolio:${{ github.event.inputs.docker_tag }} || echo "No previous image found"
+        run: |
+          docker pull ${{secrets.DOCKER_HUB_USERNAME}}/portfolio:${{ github.event.inputs.docker_tag }} || echo "No previous image found"
 
       #step 2: Removing old image
       - name: Removing old Image
         run: |
-           docker rmi ${{secrets.DOCKER_HUB_USERNAME}}/portfolio:${{ github.event.inputs.docker_tag }} || echo "No image to remove"
-      
-      
-      #step 3: Building new Docker image from docker file
+          docker rmi ${{secrets.DOCKER_HUB_USERNAME}}/portfolio:${{ github.event.inputs.docker_tag }} || echo "No image to remove"
+
+      #step 3: Building new Docker image from docker file and passing the env variable
       - name: Building Docker image
-        run: docker build -t ${{secrets.DOCKER_HUB_USERNAME}}/portfolio:${{ github.event.inputs.docker_tag }} .
-      
-      
+        run:
+          docker build --build-arg VITE_SERVICE_ID=${{ secrets.VITE_SERVICE_ID }} \
+          --build-arg VITE_TEMPLATE_ID=${{ secrets.VITE_TEMPLATE_ID }} \
+          --build-arg VITE_PUBLIC_KEY=${{ secrets.VITE_PUBLIC_KEY }} \
+          -t ${{secrets.DOCKER_HUB_USERNAME}}/portfolio:${{ github.event.inputs.docker_tag }} .
+
       #step 2: Pushing Image to docker hub
       - name: Push Docker Image
         run: docker push ${{secrets.DOCKER_HUB_USERNAME}}/portfolio:${{ github.event.inputs.docker_tag }}
-        
-
-          
-        
-
-      
-
-
-
-
-
-  
-
