@@ -32,7 +32,7 @@ export const Contact = () => {
       id="contact"
       className="min-h-screen flex flex-col items-center justify-center pt-20"
     >
-      <div className="px-4 w-150">
+      <div className="px-4 w-full sm:w-1/2">
         <h2
           className="text-3xl text-center font-bold mb-8 bg-gradient-to-r from-blue-500
 to-cyan-400 bg-clip-text text-transparent"

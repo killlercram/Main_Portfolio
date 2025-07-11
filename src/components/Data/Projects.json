@@ -2,17 +2,23 @@
   {
     "Pname": "Chat App",
     "PDescription": "A real-time chat application built using the MERN stack and Socket.IO, enabling seamless one-on-one messaging with user authentication, live message updates, and a responsive UI. Showcases full-stack development and real-time communication skills. ",
-    "Tech": ["React.js", "Node.js", "Socket.io", "Redux"]
+    "Tech": ["React.js", "Node.js", "Socket.io", "Redux"],
+    "GitHub_Link": "https://github.com/killlercram/Chatting-Application",
+    "Live_Link": "https://quick-chat-app-client-sd7m.onrender.com"
   },
   {
     "Pname": "Note Vault",
-    "PDescription": "A frontend-only note-taking app built with React, TanStack, and Zustand. Deployed as a static site on AWS S3 and served globally via CloudFront, highlighting cloud deployment, scalability, and performance optimization.",
-    "Tech": ["Typescript", "Axios", "S3", "CloudFront"]
+    "PDescription": "A frontend-only note-taking app built with React, TanStack, and Zustand. Initially deployed on AWS S3 with CloudFront for global static delivery, showcasing experience with cloud-based deployment and scalability. Currently hosted on Render for faster iteration during development.",
+
+    "Tech": ["Typescript", "Axios", "S3", "CloudFront"],
+    "GitHub_Link": "https://github.com/killlercram/Note_Taking_App",
+    "Live_Link": "https://note-vault-app-46pe.onrender.com"
   },
   {
-    "Pname": "Tic Tac Toe",
-    "PDescription": "A classic Tic Tac Toe game built using HTML, CSS, and vanilla JavaScript with interactive gameplay and a responsive layout. Hosted on Render as a static web service, showcasing cloud deployment and frontend fundamentals.",
-    "Tech": ["HTML", "CSS", "Javascript"]
+    "Pname": "Rock Paper Sessiors",
+    "PDescription": "A classic Rock Paper Sessior game built using HTML, CSS, and vanilla JavaScript with interactive gameplay and a responsive layout. Hosted on Render as a static web service, showcasing cloud deployment and frontend fundamentals.",
+    "Tech": ["HTML", "CSS", "Javascript"],
+    "GitHub_Link": "https://github.com/killlercram/Rock_Paper_Sessiors",
+    "Live_Link": "euphonious-daffodil-344ef9.netlify.app"
   }
-  
 ]

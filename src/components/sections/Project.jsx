@@ -36,19 +36,21 @@ to-cyan-400 bg-clip-text text-transparent"
                 {/* Displaying project */}
                 <div className="flex justify-between items-center">
                   <a
-                    href="#"
+                    href={section.GitHub_Link}
                     className="text-blue-400 hover:text-blue-300 transition-colors my-5 mx-2"
+                    target="_blank"
                   >
                     {" "}
-                    View Project
+                    GitHub
                   </a>
 
                   <a
-                    href="#"
+                    href={section.Live_Link}
                     className="text-blue-400 hover:text-blue-300 transition-colors my-5 mx-2"
+
                   >
                     {" "}
-                    View Project
+                    Live Link
                   </a>
                 </div>
               </div>
