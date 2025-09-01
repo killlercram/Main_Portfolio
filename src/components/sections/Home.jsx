@@ -35,7 +35,7 @@ export const Home = () => {
           </a>
 
           <a
-            href="/assets/cv/Resume.pdf"
+            href="/assets/cv/ShashwatRes.pdf"
             className="flex border py-3 px-5 border-blue-400/50 text-blue-500 rounded font-medium transition-all overflow-hidden hover:-translate-y-1"
             download
           >
